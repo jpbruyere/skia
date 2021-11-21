@@ -41,7 +41,7 @@ void gr_context_unref(gr_context_t* ctx) {
 }
 void gr_context_flush (gr_context_t* ctx){
 	GrDirectContext* gr = reinterpret_cast<GrDirectContext*>(ctx);
-	gr->flush();
+	gr->flushAndSubmit();
 }
 
 sk_surface_t* sk_surface_make_rendertarget(gr_context_t* ctx, const sk_imageinfo_t* cinfo) {
