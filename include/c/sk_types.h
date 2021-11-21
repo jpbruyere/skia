@@ -217,6 +217,10 @@ typedef struct sk_shader_t sk_shader_t;
 */
 typedef struct sk_surface_t sk_surface_t;
 
+typedef struct gr_context_t gr_context_t;
+
+typedef struct gr_vk_image_info_t gr_vk_image_info_t;
+
 typedef enum {
     NEAREST_SK_FILTER_MODE,
     LINEAR_SK_FILTER_MODE,
