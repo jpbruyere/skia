@@ -236,6 +236,7 @@ config("default") {
 
   if (is_linux) {
     libs += [ "pthread" ]
+    ldflags += [ "-lvulkan" ]
   }
 
   if (is_mac) {
